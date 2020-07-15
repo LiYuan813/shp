@@ -1,0 +1,358 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="cn.shp.oa.domain">
+
+	<class name="TPMDay" table="shp_TPMDay">
+		<id name="id">
+            <generator class="native"/>
+		</id>
+		<property name="banci" />
+		<property name="year" />
+		<property name="month" />
+		<property name="day1firstThing" />
+		<property name="day1secondThing" />
+		<property name="day1thirdThing" />
+		<property name="day1fourthThing" />
+		<property name="day1fifthThing" />	
+		<property name="day1sixthThing" />	
+		<property name="day1seventhThing" />
+		<property name="day1eighthThing" />		
+		<property name="day1ninthThing" />		
+		<property name="day1operator" />
+		
+		<property name="day2firstThing" />
+		<property name="day2secondThing" />
+		<property name="day2thirdThing" />
+		<property name="day2fourthThing" />
+		<property name="day2fifthThing" />	
+		<property name="day2sixthThing" />	
+		<property name="day2seventhThing" />
+		<property name="day2eighthThing" />		
+		<property name="day2ninthThing" />		
+		<property name="day2operator" />
+		
+		<property name="day3firstThing" />
+		<property name="day3secondThing" />
+		<property name="day3thirdThing" />
+		<property name="day3fourthThing" />
+		<property name="day3fifthThing" />	
+		<property name="day3sixthThing" />	
+		<property name="day3seventhThing" />
+		<property name="day3eighthThing" />		
+		<property name="day3ninthThing" />		
+		<property name="day3operator" />
+		
+		<property name="day4firstThing" />
+		<property name="day4secondThing" />
+		<property name="day4thirdThing" />
+		<property name="day4fourthThing" />
+		<property name="day4fifthThing" />	
+		<property name="day4sixthThing" />	
+		<property name="day4seventhThing" />
+		<property name="day4eighthThing" />		
+		<property name="day4ninthThing" />		
+		<property name="day4operator" />
+		
+		<property name="day5firstThing" />
+		<property name="day5secondThing" />
+		<property name="day5thirdThing" />
+		<property name="day5fourthThing" />
+		<property name="day5fifthThing" />	
+		<property name="day5sixthThing" />	
+		<property name="day5seventhThing" />
+		<property name="day5eighthThing" />		
+		<property name="day5ninthThing" />		
+		<property name="day5operator" />
+		
+		<property name="day6firstThing" />
+		<property name="day6secondThing" />
+		<property name="day6thirdThing" />
+		<property name="day6fourthThing" />
+		<property name="day6fifthThing" />	
+		<property name="day6sixthThing" />	
+		<property name="day6seventhThing" />
+		<property name="day6eighthThing" />		
+		<property name="day6ninthThing" />		
+		<property name="day6operator" />
+		
+		<property name="day7firstThing" />
+		<property name="day7secondThing" />
+		<property name="day7thirdThing" />
+		<property name="day7fourthThing" />
+		<property name="day7fifthThing" />	
+		<property name="day7sixthThing" />	
+		<property name="day7seventhThing" />
+		<property name="day7eighthThing" />		
+		<property name="day7ninthThing" />		
+		<property name="day7operator" />
+		
+		<property name="day8firstThing" />
+		<property name="day8secondThing" />
+		<property name="day8thirdThing" />
+		<property name="day8fourthThing" />
+		<property name="day8fifthThing" />	
+		<property name="day8sixthThing" />	
+		<property name="day8seventhThing" />
+		<property name="day8eighthThing" />		
+		<property name="day8ninthThing" />		
+		<property name="day8operator" />
+		
+		<property name="day9firstThing" />
+		<property name="day9secondThing" />
+		<property name="day9thirdThing" />
+		<property name="day9fourthThing" />
+		<property name="day9fifthThing" />	
+		<property name="day9sixthThing" />	
+		<property name="day9seventhThing" />
+		<property name="day9eighthThing" />		
+		<property name="day9ninthThing" />		
+		<property name="day9operator" />
+		
+		<property name="day10firstThing" />
+		<property name="day10secondThing" />
+		<property name="day10thirdThing" />
+		<property name="day10fourthThing" />
+		<property name="day10fifthThing" />	
+		<property name="day10sixthThing" />	
+		<property name="day10seventhThing" />
+		<property name="day10eighthThing" />		
+		<property name="day10ninthThing" />		
+		<property name="day10operator" />
+		
+		<property name="day11firstThing" />
+		<property name="day11secondThing" />
+		<property name="day11thirdThing" />
+		<property name="day11fourthThing" />
+		<property name="day11fifthThing" />	
+		<property name="day11sixthThing" />	
+		<property name="day11seventhThing" />
+		<property name="day11eighthThing" />		
+		<property name="day11ninthThing" />		
+		<property name="day11operator" />
+		
+		<property name="day12firstThing" />
+		<property name="day12secondThing" />
+		<property name="day12thirdThing" />
+		<property name="day12fourthThing" />
+		<property name="day12fifthThing" />	
+		<property name="day12sixthThing" />	
+		<property name="day12seventhThing" />
+		<property name="day12eighthThing" />		
+		<property name="day12ninthThing" />		
+		<property name="day12operator" />
+		
+		<property name="day13firstThing" />
+		<property name="day13secondThing" />
+		<property name="day13thirdThing" />
+		<property name="day13fourthThing" />
+		<property name="day13fifthThing" />	
+		<property name="day13sixthThing" />	
+		<property name="day13seventhThing" />
+		<property name="day13eighthThing" />		
+		<property name="day13ninthThing" />		
+		<property name="day13operator" />
+		
+		<property name="day14firstThing" />
+		<property name="day14secondThing" />
+		<property name="day14thirdThing" />
+		<property name="day14fourthThing" />
+		<property name="day14fifthThing" />	
+		<property name="day14sixthThing" />	
+		<property name="day14seventhThing" />
+		<property name="day14eighthThing" />		
+		<property name="day14ninthThing" />		
+		<property name="day14operator" />
+		
+		<property name="day15firstThing" />
+		<property name="day15secondThing" />
+		<property name="day15thirdThing" />
+		<property name="day15fourthThing" />
+		<property name="day15fifthThing" />	
+		<property name="day15sixthThing" />	
+		<property name="day15seventhThing" />
+		<property name="day15eighthThing" />		
+		<property name="day15ninthThing" />		
+		<property name="day15operator" />
+		
+		<property name="day16firstThing" />
+		<property name="day16secondThing" />
+		<property name="day16thirdThing" />
+		<property name="day16fourthThing" />
+		<property name="day16fifthThing" />	
+		<property name="day16sixthThing" />	
+		<property name="day16seventhThing" />
+		<property name="day16eighthThing" />		
+		<property name="day16ninthThing" />		
+		<property name="day16operator" />
+		
+		<property name="day17firstThing" />
+		<property name="day17secondThing" />
+		<property name="day17thirdThing" />
+		<property name="day17fourthThing" />
+		<property name="day17fifthThing" />	
+		<property name="day17sixthThing" />	
+		<property name="day17seventhThing" />
+		<property name="day17eighthThing" />		
+		<property name="day17ninthThing" />		
+		<property name="day17operator" />
+		
+		<property name="day18firstThing" />
+		<property name="day18secondThing" />
+		<property name="day18thirdThing" />
+		<property name="day18fourthThing" />
+		<property name="day18fifthThing" />	
+		<property name="day18sixthThing" />	
+		<property name="day18seventhThing" />
+		<property name="day18eighthThing" />		
+		<property name="day18ninthThing" />		
+		<property name="day18operator" />
+		
+		<property name="day19firstThing" />
+		<property name="day19secondThing" />
+		<property name="day19thirdThing" />
+		<property name="day19fourthThing" />
+		<property name="day19fifthThing" />	
+		<property name="day19sixthThing" />	
+		<property name="day19seventhThing" />
+		<property name="day19eighthThing" />		
+		<property name="day19ninthThing" />		
+		<property name="day19operator" />
+		
+		<property name="day20firstThing" />
+		<property name="day20secondThing" />
+		<property name="day20thirdThing" />
+		<property name="day20fourthThing" />
+		<property name="day20fifthThing" />	
+		<property name="day20sixthThing" />	
+		<property name="day20seventhThing" />
+		<property name="day20eighthThing" />		
+		<property name="day20ninthThing" />		
+		<property name="day20operator" />
+		
+		<property name="day21firstThing" />
+		<property name="day21secondThing" />
+		<property name="day21thirdThing" />
+		<property name="day21fourthThing" />
+		<property name="day21fifthThing" />	
+		<property name="day21sixthThing" />	
+		<property name="day21seventhThing" />
+		<property name="day21eighthThing" />		
+		<property name="day21ninthThing" />		
+		<property name="day21operator" />
+		
+		<property name="day22firstThing" />
+		<property name="day22secondThing" />
+		<property name="day22thirdThing" />
+		<property name="day22fourthThing" />
+		<property name="day22fifthThing" />	
+		<property name="day22sixthThing" />	
+		<property name="day22seventhThing" />
+		<property name="day22eighthThing" />		
+		<property name="day22ninthThing" />		
+		<property name="day22operator" />
+		
+		<property name="day23firstThing" />
+		<property name="day23secondThing" />
+		<property name="day23thirdThing" />
+		<property name="day23fourthThing" />
+		<property name="day23fifthThing" />	
+		<property name="day23sixthThing" />	
+		<property name="day23seventhThing" />
+		<property name="day23eighthThing" />		
+		<property name="day23ninthThing" />		
+		<property name="day23operator" />
+		
+		<property name="day24firstThing" />
+		<property name="day24secondThing" />
+		<property name="day24thirdThing" />
+		<property name="day24fourthThing" />
+		<property name="day24fifthThing" />	
+		<property name="day24sixthThing" />	
+		<property name="day24seventhThing" />
+		<property name="day24eighthThing" />		
+		<property name="day24ninthThing" />		
+		<property name="day24operator" />
+		
+		<property name="day25firstThing" />
+		<property name="day25secondThing" />
+		<property name="day25thirdThing" />
+		<property name="day25fourthThing" />
+		<property name="day25fifthThing" />	
+		<property name="day25sixthThing" />	
+		<property name="day25seventhThing" />
+		<property name="day25eighthThing" />		
+		<property name="day25ninthThing" />		
+		<property name="day25operator" />
+		
+		<property name="day26firstThing" />
+		<property name="day26secondThing" />
+		<property name="day26thirdThing" />
+		<property name="day26fourthThing" />
+		<property name="day26fifthThing" />	
+		<property name="day26sixthThing" />	
+		<property name="day26seventhThing" />
+		<property name="day26eighthThing" />		
+		<property name="day26ninthThing" />		
+		<property name="day26operator" />
+		
+		<property name="day27firstThing" />
+		<property name="day27secondThing" />
+		<property name="day27thirdThing" />
+		<property name="day27fourthThing" />
+		<property name="day27fifthThing" />	
+		<property name="day27sixthThing" />	
+		<property name="day27seventhThing" />
+		<property name="day27eighthThing" />		
+		<property name="day27ninthThing" />		
+		<property name="day27operator" />
+		
+		<property name="day28firstThing" />
+		<property name="day28secondThing" />
+		<property name="day28thirdThing" />
+		<property name="day28fourthThing" />
+		<property name="day28fifthThing" />	
+		<property name="day28sixthThing" />	
+		<property name="day28seventhThing" />
+		<property name="day28eighthThing" />		
+		<property name="day28ninthThing" />		
+		<property name="day28operator" />
+		
+		<property name="day29firstThing" />
+		<property name="day29secondThing" />
+		<property name="day29thirdThing" />
+		<property name="day29fourthThing" />
+		<property name="day29fifthThing" />	
+		<property name="day29sixthThing" />	
+		<property name="day29seventhThing" />
+		<property name="day29eighthThing" />		
+		<property name="day29ninthThing" />		
+		<property name="day29operator" />
+		
+		<property name="day30firstThing" />
+		<property name="day30secondThing" />
+		<property name="day30thirdThing" />
+		<property name="day30fourthThing" />
+		<property name="day30fifthThing" />	
+		<property name="day30sixthThing" />	
+		<property name="day30seventhThing" />
+		<property name="day30eighthThing" />		
+		<property name="day30ninthThing" />		
+		<property name="day30operator" />
+		
+		<property name="day31firstThing" />
+		<property name="day31secondThing" />
+		<property name="day31thirdThing" />
+		<property name="day31fourthThing" />
+		<property name="day31fifthThing" />	
+		<property name="day31sixthThing" />	
+		<property name="day31seventhThing" />
+		<property name="day31eighthThing" />		
+		<property name="day31ninthThing" />		
+		<property name="day31operator" />
+					
+	</class>
+	
+</hibernate-mapping>

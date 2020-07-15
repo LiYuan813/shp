@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+<session-factory>
+
+	<!-- 1，数据库连接信息 -->
+	<property name="dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+	<!--  
+	<property name="connection.url">jdbc:mysql:///shop001</property>
+	<property name="connection.driver_class">com.jdbc.mysql.Driver</property>
+	<property name="connection.username">root</property>
+	<property name="connection.password">123456</property>
+     -->
+	<!-- 2，其他配置 -->
+	<property name="show_sql">true</property>
+	<property name="hbm2ddl.auto">update</property>
+
+	<!-- 3，导入映射文件 -->
+
+     <mapping resource="cn/shp/oa/domain/User.hbm.xml" />
+     <mapping resource="cn/shp/oa/domain/Role.hbm.xml" />
+     <mapping resource="cn/shp/oa/domain/MaintenanceRecords.hbm.xml" />
+     <mapping resource="cn/shp/oa/domain/MaintainPlan.hbm.xml" />
+     <mapping resource="cn/shp/oa/domain/Privilege.hbm.xml" />
+     <mapping resource="cn/shp/oa/domain/MeasureRoom.hbm.xml" />
+     <mapping resource="cn/shp/oa/domain/MaintenancePlan.hbm.xml" />
+     <mapping resource="cn/shp/oa/domain/OutboundManagement.hbm.xml" />
+     <mapping resource="cn/shp/oa/domain/WarehouseManagement.hbm.xml" />
+     <mapping resource="cn/shp/oa/domain/TotalInventory.hbm.xml" />
+     <mapping resource="cn/shp/oa/domain/TPMWenTi.hbm.xml" />
+     <mapping resource="cn/shp/oa/domain/TPMMonth.hbm.xml" />
+     <mapping resource="cn/shp/oa/domain/TPMDay.hbm.xml" />
+     <mapping resource="cn/shp/oa/domain/TPMWeek.hbm.xml" />
+</session-factory>
+
+</hibernate-configuration>

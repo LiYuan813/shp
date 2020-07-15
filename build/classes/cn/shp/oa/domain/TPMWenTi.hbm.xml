@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="cn.shp.oa.domain">
+
+	<class name="TPMWenTi" table="shp_TPMWenTi">
+		<id name="id">
+            <generator class="native"/>
+		</id>
+		<property name="number" />
+		<property name="person1" />
+		<property name="date" />	
+		<property name="description" />	
+		<property name="reason" />	
+		<property name="measures" />	
+		<property name="time1" />
+		<property name="person2" />		
+			<property name="time2" />				
+	</class>
+	
+</hibernate-mapping>

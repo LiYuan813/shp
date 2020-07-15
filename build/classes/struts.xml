@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<!-- 配置为开发模式 -->
+    <constant name="struts.devMode" value="true" />
+    <!-- 把扩展名配置为action -->
+    <constant name="struts.action.extension" value="action" />
+    <!-- 把主题配置为simple -->
+    <constant name="struts.ui.theme" value="simple" />
+	
+   
+    <package name="default" namespace="/" extends="struts-default">
+      
+		<!-- 配置测试用的Action，未与Spring整合，class属性写类的全名 -->
+		<!-- 当Struts2与Spring整合后，class属性可以写bean的名称 -->
+        <action name="test" class="testAction">
+			<result name="success">/test.jsp</result>
+		</action>	
+		
+		<!-- 设备信息管理 -->
+        <action name="role_*" class="roleAction" method="{1}">
+			<result name="list">/WEB-INF/jsp/roleAction/list.jsp</result>
+			<result name="saveUI">/WEB-INF/jsp/roleAction/saveUI.jsp</result>
+			<result name="toList" type="redirectAction">role_list</result>
+			<result name="importUI">/WEB-INF/jsp/roleAction/importUI.jsp</result>
+			<result name="exportUI">/WEB-INF/jsp/roleAction/exportUI.jsp</result>
+		</action>
+		<!-- 维修记录 -->
+        <action name="maintenanceRecords_*" class="maintenanceRecordsAction" method="{1}">
+			<result name="list">/WEB-INF/jsp/maintenanceRecordsAction/list.jsp</result>
+			<result name="saveUI">/WEB-INF/jsp/maintenanceRecordsAction/saveUI.jsp</result>
+			<result name="toList" type="redirectAction">maintenanceRecords_list</result>
+		</action>
+		<!-- 维修计划 -->
+        <action name="maintainPlan_*" class="maintainPlanAction" method="{1}">
+			<result name="list">/WEB-INF/jsp/maintainPlanAction/list.jsp</result>
+			<result name="saveUI">/WEB-INF/jsp/maintainPlanAction/saveUI.jsp</result>
+			<result name="toList" type="redirectAction">maintainPlan_list</result>
+		</action>
+		<!-- 用户管理 -->
+        <action name="user_*" class="userAction" method="{1}">
+			<result name="list">/WEB-INF/jsp/userAction/list.jsp</result>
+			<result name="setPrivilegeUI">/WEB-INF/jsp/userAction/setPrivilegeUI.jsp</result>
+			<result name="saveUI">/WEB-INF/jsp/userAction/saveUI.jsp</result>
+			<result name="toList" type="redirectAction">user_list</result>
+			<result name="loginUI">/WEB-INF/jsp/userAction/loginUI.jsp</result>
+			<result name="logout">/WEB-INF/jsp/userAction/logout.jsp</result>
+			<result name="toIndex" type="redirect">/index2.jsp</result>
+		</action>
+		<!--首页-->
+		<action name="home_*" class="homeAction" method="{1}">
+		   <result name="{1}">/WEB-INF/jsp/homeAction/{1}.jsp</result>
+		</action>
+		<!-- 测量室管理 -->
+        <action name="measureRoom_*" class="measureRoomAction" method="{1}">
+			<result name="list">/WEB-INF/jsp/measureRoomAction/list.jsp</result>
+			<result name="saveUI">/WEB-INF/jsp/measureRoomAction/saveUI.jsp</result>
+			<result name="toList" type="redirectAction">measureRoom_list</result>
+		</action>
+	    <!-- 保养计划 -->
+        <action name="maintenancePlan_*" class="maintenancePlanAction" method="{1}">
+			<result name="list">/WEB-INF/jsp/maintenancePlanAction/list.jsp</result>
+			<result name="saveUI">/WEB-INF/jsp/maintenancePlanAction/saveUI.jsp</result>
+			<result name="toList" type="redirectAction">maintenancePlan_list</result>
+			<result name="importUI">/WEB-INF/jsp/maintenancePlanAction/importUI.jsp</result>
+		</action>
+		<!-- 出库管理 -->
+        <action name="outboundManagement_*" class="outboundManagementAction" method="{1}">
+			<result name="list">/WEB-INF/jsp/outboundManagementAction/list.jsp</result>
+			<result name="saveUI">/WEB-INF/jsp/outboundManagementAction/saveUI.jsp</result>
+			<result name="toList" type="redirectAction">outboundManagement_list</result>
+		</action>
+		<!-- 入库管理 -->
+        <action name="warehouseManagement_*" class="warehouseManagementAction" method="{1}">
+			<result name="list">/WEB-INF/jsp/warehouseManagementAction/list.jsp</result>
+			<result name="saveUI">/WEB-INF/jsp/warehouseManagementAction/saveUI.jsp</result>
+			<result name="importUI">/WEB-INF/jsp/warehouseManagementAction/importUI.jsp</result>
+			<result name="exportUI">/WEB-INF/jsp/warehouseManagementAction/exportUI.jsp</result>
+			<result name="toList" type="redirectAction">warehouseManagement_list</result>
+		</action>
+		<!-- 库存总量 -->
+        <action name="totalInventory_*" class="totalInventoryAction" method="{1}">
+			<result name="list">/WEB-INF/jsp/totalInventoryAction/list.jsp</result>
+			<result name="saveUI">/WEB-INF/jsp/totalInventoryAction/saveUI.jsp</result>
+			<result name="toList" type="redirectAction">totalInventory_list</result>
+		</action>
+		<!-- TPM问题追踪表 -->
+        <action name="problem_*" class="problemAction" method="{1}">
+			<result name="list">/WEB-INF/jsp/problemAction/list.jsp</result>
+			<result name="saveUI">/WEB-INF/jsp/problemAction/saveUI.jsp</result>
+			<result name="toList" type="redirectAction">problem_list</result>
+		</action>
+		<!-- TPM月表 -->
+        <action name="month_*" class="monthAction" method="{1}">
+			<result name="list">/WEB-INF/jsp/monthAction/list.jsp</result>
+			<result name="editUI">/WEB-INF/jsp/monthAction/editUI.jsp</result>
+			<result name="toList" type="redirectAction">month_list</result>
+		</action>
+		<!-- TPM日表 -->
+        <action name="day_*" class="dayAction" method="{1}">
+			<result name="list">/WEB-INF/jsp/dayAction/list.jsp</result>
+			<result name="editUI">/WEB-INF/jsp/dayAction/editUI.jsp</result>
+			<result name="toList" type="redirectAction">day_list</result>
+		</action>
+		<!-- TPM周表 -->
+        <action name="week_*" class="weekAction" method="{1}">
+			<result name="list">/WEB-INF/jsp/weekAction/list.jsp</result>
+			<result name="editUI">/WEB-INF/jsp/weekAction/editUI.jsp</result>
+			<result name="toList" type="redirectAction">week_list</result>
+		</action>
+				
+    </package>
+
+    <!-- Add packages here -->
+
+</struts>
